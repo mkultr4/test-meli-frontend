@@ -1,0 +1,137 @@
+// List Items
+.list-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+// Price Default
+.price {
+  .price-integer {
+    padding: 0 5px;
+  }
+  .price-decimal {
+    vertical-align: text-top;
+  }
+}
+// Free Shipping Badge
+.free-shipping {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: $success;
+  line-height: 17px;
+  vertical-align: middle;
+  text-align: center;
+  svg {
+    vertical-align: middle;
+  }
+}
+// Status Product
+.status-product{
+  display: block;
+  margin-bottom: 15px;
+}
+// Item List
+.item {
+  margin: 0px 10px;
+  padding: 30px 0;
+  border-bottom: 1px solid $gray-100;
+  .item-figure {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin: 0 auto;
+      height: 160px;
+      max-width: 100%;
+      object-fit: contain;
+    }
+  }
+  .item-title {
+    a {
+      font-weight: $font-weight-light;
+      color: $dark;
+      text-decoration: none;
+      h2 {
+        font-weight: $font-weight-light;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .item-price-shipping {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    .item-price {
+      display: block;
+      font-size: 24px;
+      color: $dark;
+      .price-decimal {
+        font-size: 10px;
+      }
+    }
+    .free-shipping {
+      margin-left: 10px;
+    }
+  }
+
+  .item-location {
+    font-size: 18px;
+    margin-top: 15px;
+    display: block;
+    color: $dark;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+// Category List
+.categories {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  min-height: 20px;
+  margin: 1.5rem 0 0 0;
+  > li {
+    line-height: 20px;
+    font-size: 16px;
+    padding-right: 15px;
+    position: relative;
+    &:before {
+      content: ">";
+      position: absolute;
+      right: 4px;
+      top: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+      &:before {
+        content: none;
+      }
+    }
+  }
+}
+// Item Details
+.item-details {
+  padding-top: 20px;
+  .item-figure {
+    text-align: center;
+  }
+  .item-title{
+    font-size: 22px;
+    line-height: 18px;
+  }
+  .item-price {
+    display: block;
+    font-size: 36px;
+    color: $dark;
+    margin-top: 15px;
+    .price-decimal {
+      font-size: 22px;
+    }
+  }
+}

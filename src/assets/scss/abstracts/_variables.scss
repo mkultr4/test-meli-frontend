@@ -1,0 +1,92 @@
+// Overwrite Bootstrap's variables here
+// You can find them in node_modules/bootstrap/scss/_variables.scss
+// Copy the variables you need into this file, don't modify files under node_modules/
+
+// Some example variables that you can uncomment:
+
+// Changing the fonts
+$fonts-source: "../../fonts/";
+$font-family-base: "Source Sans Pro", sans-serif;
+// Enabling shadows and gradients
+$enable-shadows: true;
+// Default Colors
+$white: #fff !default;
+$dark: #333 !default;
+$placeholder: rgba(0, 0, 0, 0.25);
+// Grays
+$gray-100: #ededed !default;
+$gray-400: #666 !default;
+// Changing the theme colors
+$primary: #3a3f7f !default;
+$secondary: #fff159 !default;
+// Boostrap colors
+$info: #3483fa !default;
+$warning: $secondary;
+// Changing the body background and text
+$body-bg: $gray-100;
+$body-color: $gray-400;
+// Theme Colors
+$theme-colors: (
+  "gray": $gray-100,
+);
+// Heading Sizes
+$h1-font-size: 24px;
+$h2-font-size: 20px;
+$h3-font-size: 18px;
+$h4-font-size: 16px;
+// Font Weight Default Font
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-black: 900 !default;
+$font-weights: (
+  "light": $font-weight-light,
+  "normal": $font-weight-normal,
+  "medium": $font-weight-medium,
+  "bold": $font-weight-bold,
+  "black": $font-weight-black,
+);
+// Navbar
+$navbar-nav-link-padding-x: 10px;
+// Buttons
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-padding-y: 0px;
+$btn-padding-x: 24px;
+$btn-line-height: 38px;
+$btn-font-size: 16px;
+$btn-font-weight: $font-weight-bold;
+$btn-padding-y-sm: 0;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1440px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+);
+$grid-gutter-width: 26px;
+// Responsive
+$font-size-sm: 10px;
+// Forms
+$input-font-size: 16px;
+$input-border-radius: 4px;
+$input-height: 39px;
+$input-placeholder-color: $placeholder;
+$input-color: $dark;
+$input-border-color: $gray-100;
+$input-box-shadow: none;
+$input-focus-box-shadow: none;
+// Button
+$btn-line-height: 37px;
+$btn-font-weight: $font-weight-light;

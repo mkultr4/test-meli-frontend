@@ -1,0 +1,31 @@
+#navbar-public {
+  .bar-wrapper {
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 60px;
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      background-size: 44px 31px;
+      width: 44px;
+      height: 32px;
+      top: 12px;
+      left: 0px;
+      background-image: url(/assets/img/logo__small@2x.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      @include media-breakpoint-up(lg) {
+        top: 10px;
+        width: 134px;
+        height: 34px;
+        background-size: 134px 34px;
+        background-image: url(/assets/img/logo__large_plus@2x.png);
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 165px;
+    }
+  }
+}
