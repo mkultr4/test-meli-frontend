@@ -14,11 +14,12 @@ $white: #fff !default;
 $dark: #333 !default;
 $placeholder: rgba(0, 0, 0, 0.25);
 // Grays
-$gray-100: #ededed !default;
+$gray-100: #eeeeee !default;
+$gray-300: #999999 !default;
 $gray-400: #666 !default;
 // Changing the theme colors
 $primary: #3a3f7f !default;
-$secondary: #fff159 !default;
+$secondary: #ffe600 !default;
 // Boostrap colors
 $info: #3483fa !default;
 $warning: $secondary;
@@ -27,7 +28,9 @@ $body-bg: $gray-100;
 $body-color: $gray-400;
 // Theme Colors
 $theme-colors: (
-  "gray": $gray-100,
+  "gray-100": $gray-100,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400
 );
 // Heading Sizes
 $h1-font-size: 24px;

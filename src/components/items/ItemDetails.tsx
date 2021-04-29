@@ -23,13 +23,13 @@ const ItemDetails = (props: ItemDetailsProps) => {
         <div className="item-details">
             <Container fluid>
                 <Row>
-                    <Col lg="8">
+                    <Col lg="7">
                         <figure className="item-figure">
                             <img src={item.picture} alt={item.title} />
                         </figure>
                     </Col>
-                    <Col lg="4" className="pt-4">
-                        <div className="p-5 p-lg-0 pr-lg-4 d-flex flex-column">
+                    <Col lg="5">
+                        <div className="p-5 p-lg-0 d-flex flex-column">
                             <div className="item-primary-information d-flex flex-column align-items-center align-items-lg-start">
                                 {/* Status */}
                                 <ItemStatus item={item}/>
@@ -48,10 +48,10 @@ const ItemDetails = (props: ItemDetailsProps) => {
                             </div>
                         </div>
                     </Col>
-                    <Col lg="8" className="d-flex flex-column align-items-center align-items-lg-start">
-                        <span className="item-description-content p-5">
-                            <h1 className="font-weight-normal text-dark mb-4">Descripción del producto</h1>
-                            <p>{description}</p>
+                    <Col lg="10" className="d-flex flex-column align-items-center align-items-lg-start">
+                        <span className="item-description-content">
+                            <span className="item-description-content-title">Descripción del producto</span>
+                            <p className="item-description-content-pargraph">{description}</p>
                         </span>
                     </Col>
                 </Row>

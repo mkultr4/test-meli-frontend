@@ -18,7 +18,7 @@ const IndexView = () => {
     // Items
     const [items, setItems] = useState<Array<Item>>(new Array<Item>())
     // Categories
-    const [categories, setCategories] = useState<Array<string>>([])
+    const [categories] = useState<Array<string>>(['Lorem Impsum','Lorem Impsum','Lorem Impsum','Lorem Impsum'])
     // Search
     const [search, setSearch] = useState<string>();
     // Loading
@@ -44,12 +44,6 @@ const IndexView = () => {
                     } else {
                         setItems(new Array<Item>());
                     }
-                    if (response.data.categories) {
-                        const categories = response.data.categories as Array<string>;
-                        setCategories(categories);
-                    } else {
-                        setCategories([])
-                    }
                 }
             }
         } catch (e) {
@@ -73,7 +67,7 @@ const IndexView = () => {
             {!loading && search && items.length > 0 &&
                 <>
                     <Categories categories={categories} />
-                    <div className="bg-white p-10 mt-4">
+                    <div className="bg-white">
                         <ListItem items={items} />
                     </div>
                 </>
@@ -81,7 +75,7 @@ const IndexView = () => {
             {!loading && search && items.length === 0 &&
                 <>
 
-                    <div className="bg-white p-10 mt-4">
+                    <div className="bg-white p-5 mt-4">
                         <h2 className="text-center py-5">{`Sin resultados para su búsqueda :(`}</h2>
                     </div>
                 </>

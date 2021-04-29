@@ -66,9 +66,9 @@ const SearchBar = () => {
                     aria-describedby="basic-addon2"
                 />
                 <InputGroup.Append>
-                    <Button variant="gray" type="submit">
+                    <Button variant="gray-100" type="submit">
                         <SearchOutline
-                            color={'#212529'}
+                            color={'#333'}
                             height="20px"
                             width="20px"
                         />

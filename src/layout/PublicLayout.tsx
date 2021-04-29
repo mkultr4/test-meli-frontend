@@ -4,6 +4,8 @@ import { Route, Switch } from "react-router-dom";
 import routes from "../routes/routes";
 // React bootstrap
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // Components
 import Page from "../components/page/Page";
 import Header from "../components/header/Header";
@@ -37,7 +39,11 @@ const PublicLayout = (props: any) => {
             {/* Main Content */}
             <main>
                 <Container>
-                    <Switch>{getRoutes(routes)}</Switch>
+                    <Row>
+                        <Col md={{ span: 10, offset: 1 }}>
+                            <Switch>{getRoutes(routes)}</Switch>
+                        </Col>
+                    </Row>
                 </Container>
             </main>
         </React.Fragment>

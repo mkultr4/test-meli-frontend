@@ -7,7 +7,10 @@ import axios from 'axios';
 import environment from '../constants/environment'
 // Model
 import Item from "../models/Item";
+// Details
 import ItemDetails from "../components/items/ItemDetails";
+// Categories
+import Categories from "../components/items/Categories";
 
 interface DetailViewParams {
     id: string;
@@ -19,6 +22,8 @@ const DetailView = () => {
     const { id } = useParams<DetailViewParams>();
     // Items
     const [item, setItem] = useState<Item>(new Item())
+    // Categories
+    const [categories] = useState<Array<string>>(['Lorem Impsum','Lorem Impsum','Lorem Impsum','Lorem Impsum'])
     // Loading
     const [loading, setLoading] = useState(true);
     // Fetch Data
@@ -50,9 +55,12 @@ const DetailView = () => {
         <>
             {loading && <h2 className="text-center my-5">Cargando...</h2>}
             {!loading && item.id &&
-                <div className="bg-white p-10 mt-4">
-                    <ItemDetails item={item} />
-                </div>
+                <>
+                    <Categories categories={categories} />
+                    <div className="bg-white p-10">
+                        <ItemDetails item={item} />
+                    </div>
+                </>
             }
             {!loading && !item.id &&
                 <div className="bg-white p-10 mt-4">

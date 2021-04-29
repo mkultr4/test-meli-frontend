@@ -12,14 +12,18 @@ const Header = () => {
   return (
     <Navbar bg="secondary" expand="lg" id="navbar-public" >
       <Container className="d-block">
-        <div className="bar-wrapper">
-          <Navbar.Brand href="/" />
-          <Row>
-            <Col xs={12}>
-              <SearchBar />
-            </Col>
-          </Row>
-        </div>
+        <Row>
+          <Col md={{ span: 10, offset: 1 }}>
+            <div className="bar-wrapper">
+              <Navbar.Brand href="/" />
+              <Row>
+                <Col xs={12}>
+                  <SearchBar />
+                </Col>
+              </Row>
+            </div>
+          </Col>
+        </Row>
       </Container>
     </Navbar>
   )
